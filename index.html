@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>John Mark C. Villarete | Web Developer Portfolio</title>
+<meta name="description" content="Portfolio of John Mark C. Villarete, a Computer Science student at CvSU Bacoor building clean, responsive web apps.">
+<meta name="author" content="John Mark C. Villarete">
+<meta property="og:title" content="John Mark C. Villarete | Web Developer Portfolio">
+<meta property="og:description" content="Projects, certificates, and contact details of a CvSU Bacoor student developer.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%231f5a3d'/%3E%3Ctext x='50' y='68' font-size='54' font-family='Georgia' font-weight='700' text-anchor='middle' fill='%23e8b93f'%3EJM%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Literata:opsz,wght@7..72,400;7..72,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header>
+  <div class="wrap bar">
+    <a class="logo" href="#home" aria-label="John Mark C. Villarete, home"><span class="mark" aria-hidden="true">JM</span>John Mark C. Villarete</a>
+    <nav aria-label="Main">
+      <ul id="navlist">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects &amp; Certificates</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><button class="icon-btn" id="theme" aria-label="Toggle dark mode">◐</button></li>
+      </ul>
+    </nav>
+    <button class="icon-btn" id="menu" aria-label="Open menu" aria-expanded="false" aria-controls="navlist">☰</button>
+  </div>
+</header>
+
+<main id="main">
+<!-- HOME -->
+<section class="hero" id="home">
+  <div class="wrap">
+    <div>
+      <p class="greet" id="greeting"></p>
+      <p class="tag">Hi, I’m John Mark. I build web apps that are simple to use.</p>
+      <h1>Code with <span>purpose.</span></h1>
+      <p class="lead">I’m a third-year Computer Science student at CvSU Bacoor who turns everyday problems into clean, responsive websites and applications.</p>
+      <div class="btns">
+        <a class="btn main" href="#projects">View my work</a>
+        <a class="btn alt" href="#contact">Get in touch</a>
+      </div>
+    </div>
+    <div class="card-code" aria-label="Quick profile snippet">
+      <div class="dots" aria-hidden="true"><i></i><i></i><i></i></div>
+<span class="c">// profile.js</span><br>
+<span class="k">const</span> johnMark = {<br>
+&nbsp;&nbsp;school: <span class="s">"CvSU Bacoor"</span>,<br>
+&nbsp;&nbsp;program: <span class="s">"BS Computer Science"</span>,<br>
+&nbsp;&nbsp;passion: <span class="s">"Church drumming"</span>,<br>
+&nbsp;&nbsp;focus: [<span class="s">"Web"</span>, <span class="s">"UI"</span>],<br>
+&nbsp;&nbsp;status: <span class="s typed">"Open to internships"</span><br>
+};
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="alt-bg" id="about">
+  <div class="wrap about">
+    <div class="portrait">
+      <img src="img/profile.jpg" alt="Portrait of John Mark C. Villarete">
+    </div>
+    <div>
+      <h2>About me</h2>
+      <p>I’m John Mark C. Villarete, a Computer Science student at CvSU Bacoor. I build responsive websites with HTML, CSS, and JavaScript, and I’m learning back-end development with Node.js and databases.</p>
+      <p>Outside of school, I’m a church drummer. Drumming is my passion, and it taught me to keep steady time, listen to my team, and practice until the details are right. I bring the same habits to my code.</p>
+      <div class="skills">
+        <div class="skill"><h3>Front-end</h3><p>HTML, CSS (Flexbox, Grid), JavaScript</p><div class="meter" role="img" aria-label="Proficiency 85 percent"><b class="level-85"></b></div></div>
+        <div class="skill"><h3>Back-end</h3><p>PHP, Node.js, REST APIs</p><div class="meter" role="img" aria-label="Proficiency 65 percent"><b class="level-65"></b></div></div>
+        <div class="skill"><h3>Databases</h3><p>MySQL, Firebase</p><div class="meter" role="img" aria-label="Proficiency 70 percent"><b class="level-70"></b></div></div>
+        <div class="skill"><h3>Tools</h3><p>Git, GitHub, Figma, VS Code</p><div class="meter" role="img" aria-label="Proficiency 80 percent"><b class="level-80"></b></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS & CERTIFICATES -->
+<section id="projects">
+  <div class="wrap">
+    <h2>Projects &amp; Certificates</h2>
+    <p class="section-intro">A selection of what I’ve built and learned. Filter to see only projects or only certificates.</p>
+    <div class="filters" role="group" aria-label="Filter">
+      <button type="button" data-f="all" aria-pressed="true">All</button>
+      <button type="button" data-f="project" aria-pressed="false">Projects</button>
+      <button type="button" data-f="cert" aria-pressed="false">Certificates</button>
+    </div>
+    <div class="grid">
+      <article class="item" data-t="project">
+        <img class="thumb t1" src="img/project 1.png" alt="Portfolio in Itec50 preview">
+        <div class="in"><h3>Portfolio in Itec50</h3>
+          <p>A portfolio project for ITEC 50 showcasing my web development work, skills, and learning throughout the course.</p>
+        </div>
+      </article>
+      <article class="item" data-t="project">
+        <img class="thumb t2" src="img/project 2.png" alt="Final Project in ADBMS preview">
+        <div class="in"><h3>Final Project in ADBMS</h3>
+          <p>A final project for Advanced Database Management Systems that applies database design and management concepts to a practical application.</p>
+        </div>
+      </article>
+      <article class="item" data-t="cert">
+        <img class="thumb t1" src="img/certificate 1.jpg" alt="HTML essentials preview">
+        <div class="in"><h3>HTML essentials</h3>
+          <p>A certificate recognizing foundational knowledge of HTML, including the elements and structure used to build web pages.</p>
+        </div>
+      </article>
+      <article class="item" data-t="cert">
+        <img class="thumb t2" src="img/certificate 2.png" alt="GAD Certificate preview">
+        <div class="in"><h3>GAD Certificate</h3>
+          <p>A Gender and Development certificate recognizing learning related to gender awareness, equality, and inclusive practices.</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="alt-bg" id="contact">
+  <div class="wrap contact">
+    <div>
+      <h2>Let’s work together</h2>
+      <p>Have an internship, project, or idea in mind? Get in touch through email or social media.</p>
+      <ul>
+        <li><strong>Email:</strong> <a href="mailto:johnmarkvillarete@gmail.com" id="emailLink">johnmarkvillarete@gmail.com</a><button type="button" class="copy" id="copyEmail">Copy</button></li>
+        <li><strong>Phone:</strong> <a href="tel:+639XXXXXXXXX">09614998954</a></li>
+        <li><strong>Facebook:</strong> <a href="https://www.facebook.com/jm.villarete.2025" rel="noopener">https://www.facebook.com/jm.villarete.2025</a></li>
+        <li><strong>GitHub:</strong> <a href="https://github.com/" rel="noopener">github.com/johnmarkvillarete</a></li>
+        <li><strong>Location:</strong> Bacoor, Cavite, Philippines</li>
+      </ul>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap"><span>© <span id="yr">2026</span> John Mark C. Villarete. Built with HTML, CSS, and JavaScript.</span><span>CvSU Bacoor, DCIT 26 Midterm Project</span></div>
+</footer>
+<button class="totop" id="toTop" aria-label="Back to top">↑</button>
+
+<script src="script.js" defer></script>
+</body>
+</html>
